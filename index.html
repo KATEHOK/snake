@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="board_wrapper">
+            <table class="board">
+                <tr>
+                    <td data-y="1" data-x="1" class="snake"></td>
+                    <td data-y="1" data-x="2"></td>
+                    <td data-y="1" data-x="3"></td>
+                    <td data-y="1" data-x="4"></td>
+                    <td data-y="1" data-x="5"></td>
+                    <td data-y="1" data-x="6"></td>
+                    <td data-y="1" data-x="7"></td>
+                    <td data-y="1" data-x="8"></td>
+                    <td data-y="1" data-x="9"></td>
+                    <td data-y="1" data-x="10"></td>
+                    <td data-y="1" data-x="11"></td>
+                    <td data-y="1" data-x="12"></td>
+                    <td data-y="1" data-x="13"></td>
+                    <td data-y="1" data-x="14"></td>
+                    <td data-y="1" data-x="15"></td>
+                    <td data-y="1" data-x="16"></td>
+                    <td data-y="1" data-x="17"></td>
+                    <td data-y="1" data-x="18"></td>
+                    <td data-y="1" data-x="19"></td>
+                    <td data-y="1" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="2" data-x="1" class="snake"></td>
+                    <td data-y="2" data-x="2"></td>
+                    <td data-y="2" data-x="3"></td>
+                    <td data-y="2" data-x="4"></td>
+                    <td data-y="2" data-x="5"></td>
+                    <td data-y="2" data-x="6"></td>
+                    <td data-y="2" data-x="7"></td>
+                    <td data-y="2" data-x="8"></td>
+                    <td data-y="2" data-x="9"></td>
+                    <td data-y="2" data-x="10"></td>
+                    <td data-y="2" data-x="11"></td>
+                    <td data-y="2" data-x="12"></td>
+                    <td data-y="2" data-x="13"></td>
+                    <td data-y="2" data-x="14"></td>
+                    <td data-y="2" data-x="15"></td>
+                    <td data-y="2" data-x="16"></td>
+                    <td data-y="2" data-x="17"></td>
+                    <td data-y="2" data-x="18"></td>
+                    <td data-y="2" data-x="19"></td>
+                    <td data-y="2" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="3" data-x="1" class="snake"></td>
+                    <td data-y="3" data-x="2"></td>
+                    <td data-y="3" data-x="3"></td>
+                    <td data-y="3" data-x="4"></td>
+                    <td data-y="3" data-x="5"></td>
+                    <td data-y="3" data-x="6"></td>
+                    <td data-y="3" data-x="7"></td>
+                    <td data-y="3" data-x="8"></td>
+                    <td data-y="3" data-x="9"></td>
+                    <td data-y="3" data-x="10"></td>
+                    <td data-y="3" data-x="11"></td>
+                    <td data-y="3" data-x="12"></td>
+                    <td data-y="3" data-x="13"></td>
+                    <td data-y="3" data-x="14"></td>
+                    <td data-y="3" data-x="15"></td>
+                    <td data-y="3" data-x="16"></td>
+                    <td data-y="3" data-x="17"></td>
+                    <td data-y="3" data-x="18"></td>
+                    <td data-y="3" data-x="19"></td>
+                    <td data-y="3" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="4" data-x="1"></td>
+                    <td data-y="4" data-x="2"></td>
+                    <td data-y="4" data-x="3"></td>
+                    <td data-y="4" data-x="4"></td>
+                    <td data-y="4" data-x="5"></td>
+                    <td data-y="4" data-x="6"></td>
+                    <td data-y="4" data-x="7"></td>
+                    <td data-y="4" data-x="8"></td>
+                    <td data-y="4" data-x="9"></td>
+                    <td data-y="4" data-x="10"></td>
+                    <td data-y="4" data-x="11"></td>
+                    <td data-y="4" data-x="12"></td>
+                    <td data-y="4" data-x="13"></td>
+                    <td data-y="4" data-x="14"></td>
+                    <td data-y="4" data-x="15"></td>
+                    <td data-y="4" data-x="16"></td>
+                    <td data-y="4" data-x="17"></td>
+                    <td data-y="4" data-x="18"></td>
+                    <td data-y="4" data-x="19"></td>
+                    <td data-y="4" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="5" data-x="1"></td>
+                    <td data-y="5" data-x="2"></td>
+                    <td data-y="5" data-x="3"></td>
+                    <td data-y="5" data-x="4"></td>
+                    <td data-y="5" data-x="5"></td>
+                    <td data-y="5" data-x="6"></td>
+                    <td data-y="5" data-x="7"></td>
+                    <td data-y="5" data-x="8"></td>
+                    <td data-y="5" data-x="9"></td>
+                    <td data-y="5" data-x="10"></td>
+                    <td data-y="5" data-x="11"></td>
+                    <td data-y="5" data-x="12"></td>
+                    <td data-y="5" data-x="13"></td>
+                    <td data-y="5" data-x="14"></td>
+                    <td data-y="5" data-x="15"></td>
+                    <td data-y="5" data-x="16"></td>
+                    <td data-y="5" data-x="17"></td>
+                    <td data-y="5" data-x="18"></td>
+                    <td data-y="5" data-x="19"></td>
+                    <td data-y="5" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="6" data-x="1"></td>
+                    <td data-y="6" data-x="2"></td>
+                    <td data-y="6" data-x="3"></td>
+                    <td data-y="6" data-x="4"></td>
+                    <td data-y="6" data-x="5"></td>
+                    <td data-y="6" data-x="6"></td>
+                    <td data-y="6" data-x="7"></td>
+                    <td data-y="6" data-x="8"></td>
+                    <td data-y="6" data-x="9"></td>
+                    <td data-y="6" data-x="10"></td>
+                    <td data-y="6" data-x="11"></td>
+                    <td data-y="6" data-x="12"></td>
+                    <td data-y="6" data-x="13"></td>
+                    <td data-y="6" data-x="14"></td>
+                    <td data-y="6" data-x="15"></td>
+                    <td data-y="6" data-x="16"></td>
+                    <td data-y="6" data-x="17"></td>
+                    <td data-y="6" data-x="18"></td>
+                    <td data-y="6" data-x="19"></td>
+                    <td data-y="6" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="7" data-x="1"></td>
+                    <td data-y="7" data-x="2"></td>
+                    <td data-y="7" data-x="3"></td>
+                    <td data-y="7" data-x="4"></td>
+                    <td data-y="7" data-x="5"></td>
+                    <td data-y="7" data-x="6"></td>
+                    <td data-y="7" data-x="7"></td>
+                    <td data-y="7" data-x="8"></td>
+                    <td data-y="7" data-x="9"></td>
+                    <td data-y="7" data-x="10"></td>
+                    <td data-y="7" data-x="11"></td>
+                    <td data-y="7" data-x="12"></td>
+                    <td data-y="7" data-x="13"></td>
+                    <td data-y="7" data-x="14"></td>
+                    <td data-y="7" data-x="15"></td>
+                    <td data-y="7" data-x="16"></td>
+                    <td data-y="7" data-x="17"></td>
+                    <td data-y="7" data-x="18"></td>
+                    <td data-y="7" data-x="19"></td>
+                    <td data-y="7" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="8" data-x="1"></td>
+                    <td data-y="8" data-x="2"></td>
+                    <td data-y="8" data-x="3"></td>
+                    <td data-y="8" data-x="4"></td>
+                    <td data-y="8" data-x="5"></td>
+                    <td data-y="8" data-x="6"></td>
+                    <td data-y="8" data-x="7"></td>
+                    <td data-y="8" data-x="8"></td>
+                    <td data-y="8" data-x="9"></td>
+                    <td data-y="8" data-x="10"></td>
+                    <td data-y="8" data-x="11"></td>
+                    <td data-y="8" data-x="12"></td>
+                    <td data-y="8" data-x="13"></td>
+                    <td data-y="8" data-x="14"></td>
+                    <td data-y="8" data-x="15"></td>
+                    <td data-y="8" data-x="16"></td>
+                    <td data-y="8" data-x="17"></td>
+                    <td data-y="8" data-x="18"></td>
+                    <td data-y="8" data-x="19"></td>
+                    <td data-y="8" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="9" data-x="1"></td>
+                    <td data-y="9" data-x="2"></td>
+                    <td data-y="9" data-x="3"></td>
+                    <td data-y="9" data-x="4"></td>
+                    <td data-y="9" data-x="5"></td>
+                    <td data-y="9" data-x="6"></td>
+                    <td data-y="9" data-x="7"></td>
+                    <td data-y="9" data-x="8"></td>
+                    <td data-y="9" data-x="9"></td>
+                    <td data-y="9" data-x="10"></td>
+                    <td data-y="9" data-x="11"></td>
+                    <td data-y="9" data-x="12"></td>
+                    <td data-y="9" data-x="13"></td>
+                    <td data-y="9" data-x="14"></td>
+                    <td data-y="9" data-x="15"></td>
+                    <td data-y="9" data-x="16"></td>
+                    <td data-y="9" data-x="17"></td>
+                    <td data-y="9" data-x="18"></td>
+                    <td data-y="9" data-x="19"></td>
+                    <td data-y="9" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="10" data-x="1"></td>
+                    <td data-y="10" data-x="2"></td>
+                    <td data-y="10" data-x="3"></td>
+                    <td data-y="10" data-x="4"></td>
+                    <td data-y="10" data-x="5"></td>
+                    <td data-y="10" data-x="6"></td>
+                    <td data-y="10" data-x="7"></td>
+                    <td data-y="10" data-x="8"></td>
+                    <td data-y="10" data-x="9"></td>
+                    <td data-y="10" data-x="10"></td>
+                    <td data-y="10" data-x="11"></td>
+                    <td data-y="10" data-x="12"></td>
+                    <td data-y="10" data-x="13"></td>
+                    <td data-y="10" data-x="14"></td>
+                    <td data-y="10" data-x="15"></td>
+                    <td data-y="10" data-x="16"></td>
+                    <td data-y="10" data-x="17"></td>
+                    <td data-y="10" data-x="18"></td>
+                    <td data-y="10" data-x="19"></td>
+                    <td data-y="10" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="11" data-x="1"></td>
+                    <td data-y="11" data-x="2"></td>
+                    <td data-y="11" data-x="3"></td>
+                    <td data-y="11" data-x="4"></td>
+                    <td data-y="11" data-x="5"></td>
+                    <td data-y="11" data-x="6"></td>
+                    <td data-y="11" data-x="7"></td>
+                    <td data-y="11" data-x="8"></td>
+                    <td data-y="11" data-x="9"></td>
+                    <td data-y="11" data-x="10"></td>
+                    <td data-y="11" data-x="11"></td>
+                    <td data-y="11" data-x="12"></td>
+                    <td data-y="11" data-x="13"></td>
+                    <td data-y="11" data-x="14"></td>
+                    <td data-y="11" data-x="15"></td>
+                    <td data-y="11" data-x="16"></td>
+                    <td data-y="11" data-x="17"></td>
+                    <td data-y="11" data-x="18"></td>
+                    <td data-y="11" data-x="19"></td>
+                    <td data-y="11" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="12" data-x="1"></td>
+                    <td data-y="12" data-x="2"></td>
+                    <td data-y="12" data-x="3"></td>
+                    <td data-y="12" data-x="4"></td>
+                    <td data-y="12" data-x="5"></td>
+                    <td data-y="12" data-x="6"></td>
+                    <td data-y="12" data-x="7"></td>
+                    <td data-y="12" data-x="8"></td>
+                    <td data-y="12" data-x="9"></td>
+                    <td data-y="12" data-x="10"></td>
+                    <td data-y="12" data-x="11"></td>
+                    <td data-y="12" data-x="12"></td>
+                    <td data-y="12" data-x="13"></td>
+                    <td data-y="12" data-x="14"></td>
+                    <td data-y="12" data-x="15"></td>
+                    <td data-y="12" data-x="16"></td>
+                    <td data-y="12" data-x="17"></td>
+                    <td data-y="12" data-x="18"></td>
+                    <td data-y="12" data-x="19"></td>
+                    <td data-y="12" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="13" data-x="1"></td>
+                    <td data-y="13" data-x="2"></td>
+                    <td data-y="13" data-x="3"></td>
+                    <td data-y="13" data-x="4"></td>
+                    <td data-y="13" data-x="5"></td>
+                    <td data-y="13" data-x="6"></td>
+                    <td data-y="13" data-x="7"></td>
+                    <td data-y="13" data-x="8"></td>
+                    <td data-y="13" data-x="9"></td>
+                    <td data-y="13" data-x="10"></td>
+                    <td data-y="13" data-x="11"></td>
+                    <td data-y="13" data-x="12"></td>
+                    <td data-y="13" data-x="13"></td>
+                    <td data-y="13" data-x="14"></td>
+                    <td data-y="13" data-x="15"></td>
+                    <td data-y="13" data-x="16"></td>
+                    <td data-y="13" data-x="17"></td>
+                    <td data-y="13" data-x="18"></td>
+                    <td data-y="13" data-x="19"></td>
+                    <td data-y="13" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="14" data-x="1"></td>
+                    <td data-y="14" data-x="2"></td>
+                    <td data-y="14" data-x="3"></td>
+                    <td data-y="14" data-x="4"></td>
+                    <td data-y="14" data-x="5"></td>
+                    <td data-y="14" data-x="6"></td>
+                    <td data-y="14" data-x="7"></td>
+                    <td data-y="14" data-x="8"></td>
+                    <td data-y="14" data-x="9"></td>
+                    <td data-y="14" data-x="10"></td>
+                    <td data-y="14" data-x="11"></td>
+                    <td data-y="14" data-x="12"></td>
+                    <td data-y="14" data-x="13"></td>
+                    <td data-y="14" data-x="14"></td>
+                    <td data-y="14" data-x="15"></td>
+                    <td data-y="14" data-x="16"></td>
+                    <td data-y="14" data-x="17"></td>
+                    <td data-y="14" data-x="18"></td>
+                    <td data-y="14" data-x="19"></td>
+                    <td data-y="14" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="15" data-x="1"></td>
+                    <td data-y="15" data-x="2"></td>
+                    <td data-y="15" data-x="3"></td>
+                    <td data-y="15" data-x="4"></td>
+                    <td data-y="15" data-x="5"></td>
+                    <td data-y="15" data-x="6"></td>
+                    <td data-y="15" data-x="7"></td>
+                    <td data-y="15" data-x="8"></td>
+                    <td data-y="15" data-x="9"></td>
+                    <td data-y="15" data-x="10"></td>
+                    <td data-y="15" data-x="11"></td>
+                    <td data-y="15" data-x="12"></td>
+                    <td data-y="15" data-x="13"></td>
+                    <td data-y="15" data-x="14"></td>
+                    <td data-y="15" data-x="15"></td>
+                    <td data-y="15" data-x="16"></td>
+                    <td data-y="15" data-x="17"></td>
+                    <td data-y="15" data-x="18"></td>
+                    <td data-y="15" data-x="19"></td>
+                    <td data-y="15" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="16" data-x="1"></td>
+                    <td data-y="16" data-x="2"></td>
+                    <td data-y="16" data-x="3"></td>
+                    <td data-y="16" data-x="4"></td>
+                    <td data-y="16" data-x="5"></td>
+                    <td data-y="16" data-x="6"></td>
+                    <td data-y="16" data-x="7"></td>
+                    <td data-y="16" data-x="8"></td>
+                    <td data-y="16" data-x="9"></td>
+                    <td data-y="16" data-x="10"></td>
+                    <td data-y="16" data-x="11"></td>
+                    <td data-y="16" data-x="12"></td>
+                    <td data-y="16" data-x="13"></td>
+                    <td data-y="16" data-x="14"></td>
+                    <td data-y="16" data-x="15"></td>
+                    <td data-y="16" data-x="16"></td>
+                    <td data-y="16" data-x="17"></td>
+                    <td data-y="16" data-x="18"></td>
+                    <td data-y="16" data-x="19"></td>
+                    <td data-y="16" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="17" data-x="1"></td>
+                    <td data-y="17" data-x="2"></td>
+                    <td data-y="17" data-x="3"></td>
+                    <td data-y="17" data-x="4"></td>
+                    <td data-y="17" data-x="5"></td>
+                    <td data-y="17" data-x="6"></td>
+                    <td data-y="17" data-x="7"></td>
+                    <td data-y="17" data-x="8"></td>
+                    <td data-y="17" data-x="9"></td>
+                    <td data-y="17" data-x="10"></td>
+                    <td data-y="17" data-x="11"></td>
+                    <td data-y="17" data-x="12"></td>
+                    <td data-y="17" data-x="13"></td>
+                    <td data-y="17" data-x="14"></td>
+                    <td data-y="17" data-x="15"></td>
+                    <td data-y="17" data-x="16"></td>
+                    <td data-y="17" data-x="17"></td>
+                    <td data-y="17" data-x="18"></td>
+                    <td data-y="17" data-x="19"></td>
+                    <td data-y="17" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="18" data-x="1"></td>
+                    <td data-y="18" data-x="2"></td>
+                    <td data-y="18" data-x="3"></td>
+                    <td data-y="18" data-x="4"></td>
+                    <td data-y="18" data-x="5"></td>
+                    <td data-y="18" data-x="6"></td>
+                    <td data-y="18" data-x="7"></td>
+                    <td data-y="18" data-x="8"></td>
+                    <td data-y="18" data-x="9"></td>
+                    <td data-y="18" data-x="10"></td>
+                    <td data-y="18" data-x="11"></td>
+                    <td data-y="18" data-x="12"></td>
+                    <td data-y="18" data-x="13"></td>
+                    <td data-y="18" data-x="14"></td>
+                    <td data-y="18" data-x="15"></td>
+                    <td data-y="18" data-x="16"></td>
+                    <td data-y="18" data-x="17"></td>
+                    <td data-y="18" data-x="18"></td>
+                    <td data-y="18" data-x="19"></td>
+                    <td data-y="18" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="19" data-x="1"></td>
+                    <td data-y="19" data-x="2"></td>
+                    <td data-y="19" data-x="3"></td>
+                    <td data-y="19" data-x="4"></td>
+                    <td data-y="19" data-x="5"></td>
+                    <td data-y="19" data-x="6"></td>
+                    <td data-y="19" data-x="7"></td>
+                    <td data-y="19" data-x="8"></td>
+                    <td data-y="19" data-x="9"></td>
+                    <td data-y="19" data-x="10"></td>
+                    <td data-y="19" data-x="11"></td>
+                    <td data-y="19" data-x="12"></td>
+                    <td data-y="19" data-x="13"></td>
+                    <td data-y="19" data-x="14"></td>
+                    <td data-y="19" data-x="15"></td>
+                    <td data-y="19" data-x="16"></td>
+                    <td data-y="19" data-x="17"></td>
+                    <td data-y="19" data-x="18"></td>
+                    <td data-y="19" data-x="19"></td>
+                    <td data-y="19" data-x="20"></td>
+                </tr>
+                <tr>
+                    <td data-y="20" data-x="1"></td>
+                    <td data-y="20" data-x="2"></td>
+                    <td data-y="20" data-x="3"></td>
+                    <td data-y="20" data-x="4"></td>
+                    <td data-y="20" data-x="5"></td>
+                    <td data-y="20" data-x="6"></td>
+                    <td data-y="20" data-x="7"></td>
+                    <td data-y="20" data-x="8"></td>
+                    <td data-y="20" data-x="9"></td>
+                    <td data-y="20" data-x="10"></td>
+                    <td data-y="20" data-x="11"></td>
+                    <td data-y="20" data-x="12"></td>
+                    <td data-y="20" data-x="13"></td>
+                    <td data-y="20" data-x="14"></td>
+                    <td data-y="20" data-x="15"></td>
+                    <td data-y="20" data-x="16"></td>
+                    <td data-y="20" data-x="17"></td>
+                    <td data-y="20" data-x="18"></td>
+                    <td data-y="20" data-x="19"></td>
+                    <td data-y="20" data-x="20"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btns">
+            <span id="start" class="btn">Играть</span>
+            <span id="stop" class="btn">Стоп</span>
+        </div>
+        <span class="message">Счёт:&nbsp;<span id="message">0</span></span>
+    </main>
+</body>
+
+</html>

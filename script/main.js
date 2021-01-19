@@ -106,7 +106,6 @@ let game = {
         } else {
             game.stop();
             game.lost = true;
-            alert(snake.body.length - 3);
         }
         if (snakeHeadEl.classList.contains('food')) {
             snakeHeadEl.classList.remove('food');
